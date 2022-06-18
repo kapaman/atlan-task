@@ -20,7 +20,7 @@ const Results = ({ tableName, database }) => {
       <div
         style={{
           height: "calc(100% - 65px)",
-          overflow: "scroll",
+          overflowY: "scroll",
           border: "1px solid #E8E1ED",
           borderRadius: "5px",
         }}

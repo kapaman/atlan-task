@@ -42,7 +42,6 @@ export const WorkspaceWrapper = styled.div`
   flex-direction: column;
   padding: 20px;
   width: 100%;
-  overflow: scroll;
   box-sizing: border-box;
 `;
 
@@ -53,7 +52,7 @@ export const Body = styled.div`
   background: #f9f9f9;
   box-shadow: 0px 5.29065px 42.3252px rgba(26, 19, 70, 0.12);
   border-radius: 10.5813px;
-  overflow: scroll;
+  overflow-y: scroll;
 `;
 
 export const TableHeading = styled.p`
