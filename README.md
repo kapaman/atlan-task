@@ -1,70 +1,73 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div id="top"></div>
 
-## Available Scripts
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="https://media.glassdoor.com/sqll/1028768/atlan-squarelogo-1562153961882.png" alt="Logo" width="80" height="80">
+  </a>
 
-In the project directory, you can run:
+  <h3 align="center">atlan-sql-editor</h3>
 
-### `npm start`
+  <p align="center">
+    Challenge submission for a front-end intern position at Atlan. 
+    </p>
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-### `npm test`
+<img src="https://i.postimg.cc/QxgtBXWx/normal.png"/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+SQL Editor for Data Analysts where they can perform SQL queries and see the results.(Only Front-end)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Built With
+* [React.js](https://reactjs.org/)
+* [styled-components](https://styled-components.com/)
+* [react-data-table-component](https://react-data-table-component.netlify.app/)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- USAGE EXAMPLES -->
+## Usage
+The app is hosted for the public at [https://atlan-sql-editor-kapaman.netlify.app/](https://atlan-sql-editor-kapaman.netlify.app/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<!-- ROADMAP -->
+## Features
+<img src="https://i.postimg.cc/QxgtBXWx/normal.png"/>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-  Tabbed Structure to access Results and Query Quickly.
+-  Workspace tab to quickly access the tables already generated.
+- Preview feature to check all the keys of a particular table without actually querying for it. Useful for data analysts as they don't need to query the entire table just to check the keys the table has. Also potential to add some more metadata regarding type of key (string,number etc) which can add to the overall User Experience.
 
-## Learn More
+	<img src="https://i.postimg.cc/0QJDMbSH/preview.png" width="200"/>
+- Minimizing the Workspace tab when not in use to save space.
+- Table generated using a light-weight react table library for performance gains.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+	<img src="https://i.postimg.cc/SKpZNf8v/react-table-size.png" height="200" />
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Export Results in JSON format(can be extended to other formats based on user needs).
+<img src="https://i.postimg.cc/jdY2dW2F/export.png"/>
 
-### Code Splitting
+<!-- ACKNOWLEDGMENTS -->
+## Load Time
+I calculated the Load time using various websites all of which indicate that on average the load time appears to be around 600-700ms.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Google Page Insights:
+Performance Score: 99 
 
-### Analyzing the Bundle Size
+First Contentful Paint : 0.7s
+<img src="https://i.postimg.cc/0Qkc75VG/insights.png"/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### gtMetrix: 
+Latest Contentful Paint: 462ms
+<img src="https://i.postimg.cc/nhmRJPsm/gtmetrix.png"/>
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### tools.pingdom: 
+Load Time: 633ms
+<img src="https://i.postimg.cc/hj2MsFYk/loadtime.png"/>
