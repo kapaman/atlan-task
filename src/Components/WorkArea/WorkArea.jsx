@@ -1,18 +1,10 @@
 import React, { useEffect, useState } from "react";
-import {
-  Body,
-  ButtonWrapper,
-  Header,
-  HeaderWrapper,
-  PrimaryButton,
-  ResetButton,
-  TextArea,
-  Wrapper,
-} from "../Styles/WorkArea.styled";
-import Results from "./Results";
+import { Header, HeaderWrapper, Wrapper } from "../../Styles/WorkArea.styled";
+import Body from "./Body";
 
 const WorkArea = ({ runQuery, setRunQuery, database }) => {
   const [tableName, setTableName] = useState("");
+
   useEffect(() => {
     if (runQuery.length > 0 && setRunQuery !== runQuery) {
       setQuery(runQuery);
@@ -31,7 +23,7 @@ const WorkArea = ({ runQuery, setRunQuery, database }) => {
       }
       setResultSection(true);
     }
-  }, [runQuery]);
+  }, [runQuery, setRunQuery, database]);
 
   const handleRun = () => {
     if (query === runQuery) {
@@ -43,43 +35,6 @@ const WorkArea = ({ runQuery, setRunQuery, database }) => {
 
   const [resultSection, setResultSection] = useState(false);
   const [query, setQuery] = useState("");
-  const getBodyContent = () => {
-    if (resultSection === true) {
-      return (
-        <Body>
-          <Results
-            style={{
-              border: "1px solid #E8E1ED",
-            }}
-            database={database}
-            tableName={tableName}
-          ></Results>
-        </Body>
-      );
-    }
-
-    return (
-      <Body>
-        <TextArea
-          placeholder="Enter Query Here"
-          onChange={(e) => {
-            setQuery(e.target.value);
-          }}
-          value={query}
-        ></TextArea>
-        <ButtonWrapper>
-          <PrimaryButton onClick={handleRun}>Run</PrimaryButton>
-          <ResetButton
-            onClick={() => {
-              setQuery("");
-            }}
-          >
-            Reset
-          </ResetButton>
-        </ButtonWrapper>
-      </Body>
-    );
-  };
 
   return (
     <Wrapper
@@ -103,7 +58,14 @@ const WorkArea = ({ runQuery, setRunQuery, database }) => {
           Results
         </Header>
       </HeaderWrapper>
-      {getBodyContent()}
+      <Body
+        resultSection={resultSection}
+        tableName={tableName}
+        database={database}
+        setQuery={setQuery}
+        query={query}
+        handleRun={handleRun}
+      ></Body>
     </Wrapper>
   );
 };

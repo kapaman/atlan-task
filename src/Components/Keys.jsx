@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import { ReactComponent as Down } from "../img/down.svg";
 import { ReactComponent as Up } from "../img/up.svg";
 import {
+  Icon,
+  NameAndRecords,
   PreviewWrapper,
   TableKeysTile,
+  TableName,
   TableTiles,
+  TileWrapper,
 } from "../Styles/Keys.styled";
 import { capitalize } from "../utils";
 
@@ -26,51 +30,21 @@ const Keys = ({ name, keys, records, setRunQuery }) => {
 
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          width: "100%",
-          border: " 1px solid #E8E1ED",
-          borderRadius: "8px",
-          padding: "8px 10px 8px 15px",
-          justifyContent: "center",
-          alignItems: "center",
-          marginTop: "10px",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            width: "100%",
-            color: "#293DEF",
-          }}
-        >
-          <p
-            style={{ cursor: "pointer", fontSize: "17px", fontWeight: "500" }}
+      <TileWrapper>
+        <NameAndRecords>
+          <TableName
             onClick={() => {
               setRunQuery(`SELECT * FROM ${name}`);
             }}
           >
             {capitalize(name)}
-          </p>
+          </TableName>
           <p>{records}</p>
-        </div>
-        <div
-          onClick={() => setExpanded(!expanded)}
-          style={{
-            marginLeft: "10px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            cursor: "pointer",
-            height: "20px",
-            width: "15px",
-          }}
-        >
+        </NameAndRecords>
+        <Icon onClick={() => setExpanded(!expanded)}>
           {expanded ? <Up></Up> : <Down></Down>}
-        </div>
-      </div>
+        </Icon>
+      </TileWrapper>
       <PreviewTableKeys expanded={expanded} keys={keys} />
     </>
   );

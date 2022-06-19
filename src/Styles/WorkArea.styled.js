@@ -29,7 +29,7 @@ export const Wrapper = styled.div`
   flex-grow: 1;
 `;
 
-export const Body = styled.div`
+export const WorkspaceBody = styled.div`
   width: 100%;
   height: 500px;
   box-sizing: border-box;

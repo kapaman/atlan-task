@@ -5635,8 +5635,8 @@ const suppliers = [
     homePage: "NULL",
   },
 ];
-// const data = ;
-export default {
+
+const data = {
   categories,
   customers,
   employees,
@@ -5646,3 +5646,4 @@ export default {
   regions,
   suppliers,
 };
+export default data;

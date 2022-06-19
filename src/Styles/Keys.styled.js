@@ -35,3 +35,37 @@ export const TableKeysTile = styled.div`
   padding: 10px 15px;
   width: 100%;
 `;
+
+export const TileWrapper = styled.div`
+  display: flex;
+  width: 100%;
+  border: 1px solid #e8e1ed;
+  border-radius: 8px;
+  padding: 8px 10px 8px 15px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+`;
+
+export const NameAndRecords = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #293def;
+`;
+
+export const Icon = styled.div`
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 20px;
+  width: 15px;
+`;
+
+export const TableName = styled.p`
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+`;

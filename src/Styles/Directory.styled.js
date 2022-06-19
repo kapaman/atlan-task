@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Header = styled.div`
+export const DirectoryHeader = styled.div`
   display: flex;
   position: relative;
   justify-content: center;
@@ -45,7 +45,7 @@ export const WorkspaceWrapper = styled.div`
   box-sizing: border-box;
 `;
 
-export const Body = styled.div`
+export const DirectoryBody = styled.div`
   width: 100%;
   height: 500px;
   box-sizing: border-box;

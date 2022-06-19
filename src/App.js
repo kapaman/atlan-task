@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./App.css";
-import Directory from "./Components/Directory";
-import WorkArea from "./Components/WorkArea";
+import Directory from "./Components/Directory/Directory";
+import WorkArea from "./Components/WorkArea/WorkArea";
 import data from "./data.js";
 import { Main, Navbar } from "./Styles/General.styled";
 
