@@ -3,14 +3,6 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<div align="center">
-
-  <h3 align="center">sql-editor</h3>
-
-  <p align="center">
-    Challenge submission for Atlan. 
-    </p>
-</div>
 
 
 <!-- ABOUT THE PROJECT -->
