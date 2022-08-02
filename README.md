@@ -4,14 +4,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://media.glassdoor.com/sqll/1028768/atlan-squarelogo-1562153961882.png" alt="Logo" width="80" height="80">
-  </a>
 
-  <h3 align="center">atlan-sql-editor</h3>
+  <h3 align="center">sql-editor</h3>
 
   <p align="center">
-    Challenge submission for a front-end intern position at Atlan. 
+    Challenge submission for Atlan. 
     </p>
 </div>
 
